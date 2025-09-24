@@ -12,8 +12,8 @@
         "grade": "C"
     },
     {
-        "roll_no": "",
-        "name": "2",
+        "roll_no": "2",
+        "name": "arun",
         "marks": {
             "maths": 60,
             "science": 30,

@@ -16,3 +16,12 @@ def load_students():
 def save_students(students):
     with open(DATA_FILE,'w') as f:
         json.dump(students,f,indent=4)
+
+def search_student():
+    students = load_students()
+    roll_no = input("Enter roll number of the student ")
+    for s in students:
+        if s["roll_no"] == roll_no:
+            print(s)
+        else:
+            print("Student not found") 

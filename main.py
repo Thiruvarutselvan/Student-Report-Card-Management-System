@@ -1,5 +1,5 @@
 from student import Student 
-from utils import load_students, save_students
+from utils import load_students, save_students,search_student
 
 def add_student():
     roll_no = input("enter roll no")
@@ -25,7 +25,8 @@ def main():
         print("\n--- Student Report Card System ---")
         print("1. Add Student")
         print("2. View Students")
-        print("3. Exit")
+        print("3. Search Student by roll No")
+        print("4. Exit")
 
         choice = input("Enter choice: ")
         if choice == "1":
@@ -33,6 +34,8 @@ def main():
         elif choice == "2":
             view_students()
         elif choice == "3":
+            search_student()
+        elif choice == "4":
             break
         else:
             print("Invalid choice")        
